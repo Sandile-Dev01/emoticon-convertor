@@ -4,7 +4,12 @@
 }
 
 :root{
+    --clr-black: rgb(0,0,0);
     --dark-clr: rgb(3, 3, 65);
+    --dark-transparent: rgba(0, 0, 0, 0.453);
+
+    --clr-gold: yellow;
+
     --main-clr: rgba(8, 8, 157, 0.908);
     --accent-clr: rgba(8, 205, 227, 0.956);
     --light-clr: rgba(255, 255, 255, 0.96);
@@ -45,7 +50,7 @@
     margin: 0 auto;
     padding: .2em .1em;
     width: 10em;
-    border: 1px solid black;
+    border: 1px solid var(--clr-black);
     border-radius: .2em;
 }
 
@@ -62,7 +67,7 @@
 }
 
 .emoji-space{
-    background-color: black;
+    background-color: var(--clr-black);
     height: 3em;
     width: 20%;
     border-radius: 50%;
@@ -97,7 +102,7 @@
 .convert-btn{
     background-color: var(--main-clr);
     padding: .2em .5em;
-    color: yellow;
+    color: --clr-gold;
     font-weight: bold;
     font-size: 1em;
     border-radius: 0.2em;
@@ -152,19 +157,21 @@ strong{
         top: 20%;
         opacity: .8;
         box-shadow: var(--b-s);
-        background-color: rgba(0, 0, 0, 0.453);
+        background-color: --dark-transparent;
+    }
+}
+
+@media (min-width: 800px){
+    .sub-container{
+        width: 80%;
+        height: 50%;
+        left: 10%;
     }
 }
 
 @media (min-width: 1280px){
     .sub-container{
-        position: absolute;
-        width: 30%;
-        height: 50%;
-        left: 35%;
-        top: 20%;
-        opacity: .8;
-        box-shadow: var(--b-s);
-        background-color: rgba(0, 0, 0, 0.453);
+        width: 50%;
+        left: 30%;
     }
 }
