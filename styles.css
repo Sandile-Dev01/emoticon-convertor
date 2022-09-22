@@ -15,10 +15,6 @@
            2px 1px 2px 3px rgb(60, 120, 210);
 }
 
-section{
-    background-color: aqua;
-}
-
 .emoticon-header{
     text-align: center;
     background-color: var(--main-clr);
