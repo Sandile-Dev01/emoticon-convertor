@@ -1,0 +1,27 @@
+@media (min-width: 0px){
+    .sub-container{
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        left: 5%;
+        top: 20%;
+        opacity: .8;
+        box-shadow: var(--b-s);
+        background-color: --dark-transparent;
+    }
+}
+
+@media (min-width: 800px){
+    .sub-container{
+        width: 80%;
+        height: 50%;
+        left: 10%;
+    }
+}
+
+@media (min-width: 1280px){
+    .sub-container{
+        width: 50%;
+        left: 30%;
+    }
+}

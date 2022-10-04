@@ -7,6 +7,12 @@ let emojiSpace = document.getElementById("emoji-space");
 let emojiToLoad = emojiInput.value;
 
 const loadInput = ()=>{
+
+    if(emojiInput == ''){
+        console.log("nothing to load");
+
+    }
+    
     if(meaningInput.style.display == 'none'){
     meaningInput.style.display = 'block'; 
     emojiDisplayer.style.display = 'block'; 
@@ -19,11 +25,6 @@ const loadInput = ()=>{
     eraseBtn.style.display = 'block';
     }
 
-    if(emojiToLoad == ":)"){
-        
-    }else{
-        console.log('some');
-    }
 }
 
 const eraseDisplay = ()=>{

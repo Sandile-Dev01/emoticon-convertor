@@ -1,0 +1,103 @@
+@use './index/' as *;
+
+html,
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: aqua;
+}
+
+.emoticon-header{
+    text-align: center;
+    background-color: $main-clr;
+    color: $light-clr;
+    font-family:'Gill Sans', 'Gill Sans MT';
+    padding: .1em 0;
+    font-size: 3em;
+}
+
+.container{
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+    .sub-container{
+
+        & label{
+            display: block;
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Trebuchet MS','Lucida Sans';
+            color: $lighter-clr;
+        }
+        
+        & input{
+            display: block;
+            margin: 0 auto;
+            padding: 0.2em .1em;
+            width: 10em;
+            border: 1px solid $clr-black;
+            border-radius: 0.2em;
+        }
+        
+        & input &:focus{
+            outline: none;
+        }
+        
+        .emoji-displayer{
+        
+            @include display(none, 0.2em, 50%, $accent-clr);
+            
+            margin: .2em auto;
+        
+            #emoji-display{
+                display: none;
+                font-family: 'Gill Sans';
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+        
+            .emoji-space{
+        
+                @include display(flex, 50%, 20%, $clr-black);
+        
+                height: 3em;
+                position: relative;
+                left: 75%;
+                transform: translate(0, -1em);
+            }
+        }
+        
+        #eraser{
+            display: none;
+        }
+        
+        .meaning-box{
+            width: 80%;
+            height: fit-content;
+            margin: 0 auto;
+            padding: .3em;
+            text-overflow: 6ch;
+            background-color: $accent-clr;
+            border-radius: .5em;
+            display: none;
+        }
+    }
+    
+
+    strong{
+        color: $lighter-clr;
+        font-size: 1.3em;
+    }
+}
+
+.credit{
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.5em;
+    background-color: $dark-clr;
+    color: $light-clr;
+    text-align: center;
+}

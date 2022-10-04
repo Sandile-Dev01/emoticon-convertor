@@ -1,0 +1,34 @@
+@use '../colors/colors' as c;
+@use '../mixins/mixins' as *;
+
+.convert-btn{
+
+    @include alignment();
+
+    background-color: c.$main-clr;
+    padding: .2em .5em;
+    color: c.$clr-gold;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+
+    &:hover{
+        color: aqua;
+        opacity: .8;
+    }
+}
+
+.erase-btn{
+    @include alignment();
+
+    background-color: c.$light-clr;
+    width: 10em;
+    padding: .2em 1em;
+    color: c.$dark-clr;
+    transition-duration: .5s;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.2,1.1);
+    }
+}
