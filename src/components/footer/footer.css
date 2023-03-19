@@ -1,0 +1,20 @@
+.footer_text{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer_text a{
+    color: white;
+}
+
+.footer_text a:hover{
+    color: rgba(206, 206, 8, 0.904);
+}
+
+@media (min-width: 0px) {
+    .footer_text{
+        font-size: 1.3ch;
+    }
+}

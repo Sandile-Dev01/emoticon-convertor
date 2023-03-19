@@ -1,0 +1,25 @@
+.nav_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.emoticon_header{
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 5ch;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.switch_btn{
+    color: rgb(127, 252, 233);
+    font-size: 1.7rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+.switch_btn:hover{
+    color: var(--white);
+}

@@ -1,0 +1,7 @@
+:root{
+  --black: rgb(0, 0, 0);
+  --white: white;
+
+  --ff-primary:  'Bebas Neue', cursive;
+  --ff-secondary: 'Prompt', sans-serif;
+}
